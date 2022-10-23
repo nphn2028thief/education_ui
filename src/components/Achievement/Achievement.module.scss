@@ -67,6 +67,10 @@
 /* Responsive */
 /* Tablet And Mobile */
 @media (max-width: 1023px) {
+    .wrapper {
+        padding-top: 2rem;
+    }
+
     .left {
         width: 80%;
         margin: 0 auto;
@@ -90,10 +94,6 @@
 
 /* Mobile */
 @media (max-width: 739px) {
-    .wrapper {
-        padding-top: 2rem;
-    }
-
     .container {
         width: var(--width-small);
         gap: 3.2rem;
