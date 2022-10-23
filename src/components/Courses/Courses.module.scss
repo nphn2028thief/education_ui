@@ -66,6 +66,22 @@
     }
 }
 
+/* Tablet and Moblie */
+@media (max-width: 1023px) {
+    .course-item {
+        padding-bottom: 0;
+    }
+
+    .info {
+        .more-btn {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 0;
+            padding: 1rem 2rem;
+        }
+    }
+}
+
 @media (min-width: 740px) and (max-width: 1023px) {
     .container {
         width: var(--width-medium);
