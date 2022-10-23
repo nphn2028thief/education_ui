@@ -53,11 +53,6 @@
     }
 }
 
-.background-color {
-    background: var(--background-color-3);
-    border-radius: 50%;
-}
-
 /* Contact Form */
 .contact-form {
     // display: flex;
@@ -88,6 +83,7 @@
 .send-btn {
     width: fit-content;
     justify-self: flex-end;
+    font-size: 1.4rem;
 }
 
 /* Responsive */

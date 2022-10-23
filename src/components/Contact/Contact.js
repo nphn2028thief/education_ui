@@ -38,7 +38,7 @@ function Contact() {
                         </li>
                     </ul>
 
-                    <Social className={cx('background-color')} />
+                    <Social className={cx('background-color')} contact />
                 </aside>
 
                 <form action="https://formspree.io/f/mbjbaydj" method="POST" className={cx('contact-form')}>

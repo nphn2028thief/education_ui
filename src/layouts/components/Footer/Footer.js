@@ -77,7 +77,7 @@ function Footer() {
                         <p className={cx('info-text')}>nphn2082thief@gmail.com</p>
                     </div>
 
-                    <Social />
+                    <Social className={cx('social-footer')} />
                 </div>
             </div>
         </footer>

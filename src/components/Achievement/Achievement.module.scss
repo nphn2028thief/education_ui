@@ -72,6 +72,10 @@
         margin: 0 auto;
     }
 
+    .right {
+        text-align: center;
+    }
+
     .container {
         width: var(--width-medium);
         grid-template-columns: 1fr;
@@ -95,12 +99,8 @@
         gap: 3.2rem;
     }
 
-    .right {
-        text-align: center;
-
-        .title {
-            font-size: 2.8rem;
-        }
+    .title {
+        font-size: 2.8rem;
     }
 
     .cards {

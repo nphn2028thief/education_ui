@@ -86,6 +86,7 @@
     .container {
         width: var(--width-medium);
         grid-template-columns: 1fr 1fr;
+        gap: 2.4rem;
     }
 }
 
