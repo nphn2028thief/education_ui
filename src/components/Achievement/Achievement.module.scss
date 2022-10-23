@@ -75,14 +75,32 @@
     .container {
         width: var(--width-medium);
         grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 740px) and (max-width: 1023px) {
+    .container {
         gap: 6.4rem;
     }
 }
 
 /* Mobile */
 @media (max-width: 739px) {
+    .wrapper {
+        padding-top: 2rem;
+    }
+
     .container {
         width: var(--width-small);
+        gap: 3.2rem;
+    }
+
+    .right {
+        text-align: center;
+
+        .title {
+            font-size: 2.8rem;
+        }
     }
 
     .cards {
