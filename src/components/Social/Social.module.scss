@@ -1,8 +1,9 @@
 .socials {
-    display: flex;
+    // display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 0.1fr);
     gap: 1.2rem;
     margin-top: 1.2rem;
-    margin-left: -1.6rem;
 }
 
 .social-icon {
