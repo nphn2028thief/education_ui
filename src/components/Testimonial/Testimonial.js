@@ -2,7 +2,7 @@ import classNames from 'classnames/bind';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
-import { Pagination } from 'swiper';
+import { Pagination, Autoplay } from 'swiper';
 
 import { testimonials } from '~/data';
 import styles from './Testimonial.module.scss';
@@ -25,8 +25,9 @@ function Testimonial() {
                             spaceBetween: 16,
                         },
                     }}
+                    autoplay={{ delay: 2000 }}
                     pagination={{ clickable: true }}
-                    modules={[Pagination]}
+                    modules={[Autoplay, Pagination]}
                     className="mySwiper"
                 >
                     {testimonials.map((testimonial) => (

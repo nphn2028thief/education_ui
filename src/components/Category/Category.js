@@ -17,7 +17,7 @@ function Category() {
                         molestiae possimus vel temporibus error. Voluptatem cum harum ipsum facilis ducimus veritatis
                         optio, nihil qui provident.
                     </p>
-                    <Button to="/" btn>
+                    <Button to="/" btn className={cx('more-btn')}>
                         Learn More
                     </Button>
                 </div>

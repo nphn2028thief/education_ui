@@ -15,7 +15,7 @@ function Header() {
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quitsquam saepe animi, ad quis et atque
                         iste placeat minus ipsa rem?
                     </p>
-                    <Button to="/courses" btn danger>
+                    <Button to="/courses" btn danger className={cx('started-btn')}>
                         Get Started
                     </Button>
                 </div>
