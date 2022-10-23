@@ -1,0 +1,30 @@
+.btn {
+    background: var(--white-color);
+    color: var(--black-color);
+    padding: 1.6rem 2.8rem;
+    border: 1px solid transparent;
+    font-weight: 500;
+    transition: var(--transition);
+
+    &:hover {
+        cursor: pointer;
+        background: transparent;
+        color: var(--white-color);
+        border-color: var(--white-color);
+    }
+}
+
+.success {
+    background-color: var(--success-color);
+    color: var(--white-color);
+}
+
+.warning {
+    background-color: var(--warning-color);
+    color: var(--white-color);
+}
+
+.danger {
+    background-color: var(--danger-color);
+    color: var(--white-color);
+}

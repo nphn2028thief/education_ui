@@ -1,0 +1,143 @@
+.wrapper {
+    background: var(--background-color-2);
+    height: 46.4rem;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    // gap: 6.4rem;
+    width: var(--width-large);
+    height: 100%;
+    margin: 0 auto;
+}
+
+.left {
+    margin-right: 4.8rem;
+
+    .title {
+        line-height: 1;
+        margin-bottom: 3.6rem;
+    }
+
+    .desc {
+        font-size: 1.4rem;
+        margin-top: 1.6rem;
+        margin-bottom: 4.8rem;
+    }
+}
+
+.right {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+/* Category Item */
+.category-item {
+    background: var(--background-color-3);
+    padding: 2.8rem;
+    border-radius: 3.2rem;
+    transition: var(--transition);
+
+    &:hover {
+        box-shadow: 0 4.8rem 4.8rem rgba(0, 0, 0, 0.3);
+        transform: translateY(-2px);
+    }
+
+    &:nth-child(2) .icon {
+        background: var(--danger-color);
+    }
+
+    &:nth-child(3) .icon {
+        background: var(--success-color);
+    }
+
+    &:nth-child(4) .icon {
+        background: var(--warning-color);
+    }
+
+    &:nth-child(5) .icon {
+        background: var(--success-color);
+    }
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4.8rem;
+    padding: 1.1rem;
+    border-radius: 14px;
+    background: var(--primary-color);
+}
+
+.name {
+    margin: 3.2rem 0 1.6rem;
+}
+
+.item-desc {
+    font-size: 1.4rem;
+}
+
+/* Responsive */
+/* Tablet */
+@media (min-width: 1024px) and (max-width: 1192px) {
+    .wrapper {
+        height: auto;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+        gap: 5.6rem;
+    }
+}
+
+@media (max-width: 1023px) {
+    .wrapper {
+        height: auto;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+        gap: 5.6rem;
+    }
+
+    .left {
+        margin-right: 0;
+    }
+}
+
+@media (min-width: 740px) and (max-width: 1023px) {
+    .container {
+        width: var(--width-medium);
+    }
+
+    .category-item {
+        padding: 2.4rem;
+    }
+}
+
+/* Mobile */
+@media (max-width: 739px) {
+    .container {
+        width: var(--width-small);
+        grid-template-columns: 1fr;
+    }
+
+    .left {
+        .title {
+            font-size: 2.8rem;
+        }
+    }
+
+    .right {
+        grid-template-columns: 1fr 1fr;
+        gap: 1.4rem;
+    }
+
+    .category-item {
+        padding: 2rem;
+        border-radius: 2.4rem;
+    }
+}

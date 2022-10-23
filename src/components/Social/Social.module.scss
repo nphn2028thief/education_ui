@@ -1,0 +1,34 @@
+.socials {
+    display: flex;
+    gap: 1.2rem;
+    margin-top: 1.2rem;
+    margin-left: -1.6rem;
+}
+
+.social-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // background: var(--background-color-3);
+
+    .social-icon-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 12px;
+        transition: var(--transition);
+
+        &:hover {
+            cursor: pointer;
+            opacity: 0.6;
+        }
+    }
+}
+
+/* Responsive */
+/* Mobile */
+@media (max-width: 600px) {
+    .socials {
+        justify-content: center;
+    }
+}
