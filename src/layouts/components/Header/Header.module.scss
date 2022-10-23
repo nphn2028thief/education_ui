@@ -42,6 +42,10 @@
 
 /* Mobile */
 @media (max-width: 739px) {
+    .wrapper {
+        height: 72vh;
+    }
+
     .container {
         width: var(--width-small);
         grid-template-columns: 1fr;
