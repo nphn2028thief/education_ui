@@ -21,7 +21,8 @@
     display: flex;
     height: fit-content;
     align-items: center;
-    gap: 2.2rem;
+    column-gap: 2.2rem;
+    -webkit-column-gap: 2.2rem;
     padding: 2.8rem;
     background: var(--primary-color);
     cursor: pointer;
